@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "625918785583",
+    "project_id": "hove-695e5",
+    "storage_bucket": "hove-695e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625918785583:android:ebb4a35b759b4cbf2f6eda",
+        "android_client_info": {
+          "package_name": "capenexis.co.za.mychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625918785583-9shualo4s0j565801pfee32och68f4dh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYkOWHwDCZagXXQn00ir-iWe4ouCWafwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625918785583-9shualo4s0j565801pfee32och68f4dh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
