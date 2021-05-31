@@ -2,6 +2,7 @@ package capenexis.co.za.mychat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -43,11 +44,12 @@ public class MainActivity extends AppCompatActivity {
         signInButton = findViewById(R.id.signInBtn);
         editText = findViewById(R.id.editText);
 
-        if(editText.getText() != null){
-            signIn();
-        } else {
-            Toast.makeText(MainActivity.this,"Username needed",Toast.LENGTH_SHORT).show();
-        }
+        signInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signIn();
+            }
+        });
 
         // [START config_signin]
         // Configure Google Sign In
