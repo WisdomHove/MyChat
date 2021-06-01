@@ -39,18 +39,18 @@ public class ChatActivity extends AppCompatActivity {
         userMessage = findViewById(R.id.user_message);
 
         mChatData = FirebaseDatabase.getInstance().getReference().child("chats");
-        mUserData = FirebaseDatabase.getInstance().getReference().child(Objects.requireNonNull(mAuth.getUid()));
+        mUserData = FirebaseDatabase.getInstance().getReference().child(mAuth.getUid());
 
         displayChatMessage();
 
         mUserData.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                username = Objects.requireNonNull(dataSnapshot.child("username").getValue()).toString();
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                username = (dataSnapshot.child("username").getValue()).toString();
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+            public void onCancelled(DatabaseError databaseError) {
 
             }
         });
